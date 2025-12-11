@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KORA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> KORA </h1>
+        <p> Decoración para interiores y muebles </p>
+        <video controls>
+            <source src="assets/video/Intro.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#catalog">Catalogo</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+               <h3>Nuestra historia</h3>
+                <p> <strong>KORA</strong> nació de la pasión por el <em>diseño y la funcionalidad en el hogar.</em> Desde nuestros inicios, hemos trabajado para ofrecer productos que combinan estética y practicidad.</p>
+        </section>
+        <section id="catalog">
+            <h2>Catalogo</h2>
+
+            <div class="product">
+                <img src="assets/img/Mesa.png" alt="Mesa de diseño">
+                <h3>Mesa de Centro</h3>
+                <p>Mesa de Centro Moderna con Cubierta de Vidrio Templado</p>
+
+                <ol>
+                    <li>Material: Madera y Vidrio Templado</li>
+                    <li>Dimensiones: 120cm x 60cm x 45cm</li>
+                    <li>Color: Nogal con Vidrio Transparente</li>
+                </ol>
+                
+                <p>Precio: $100 </p>
+            </div>
+                        <table>
+                <thead>
+                    <tr>
+                        <th>Ciudad de envio</th>
+                        <th>Costo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Quito</td>
+                        <td>$5.00</td>
+                    </tr>    
+                    <tr>
+                        <td>Guayaquil</td>
+                        <td>$8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cuenca</td>
+                        <td>$10.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>    
+
+        </section>
+    </main>
+
+    <footer>
+        <p> KORA. Todos los derechos reservados.</p>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
