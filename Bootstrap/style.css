@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --color-principal: #ebdbb2;
+  --bs-body-font-family: 'Poppins', sans-serif;
+  --bs-border-radius: 0;
+}
+
+.btn-primary {
+  background-color: var(--color-principal);
+  color: #282828;
+}
+.btn-primary:hover {
+  background-color: #282828;
+  color: #fff;
+}
