@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap y Código JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nuvia Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="container mt-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/id/1/1200/400" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/id/2/1200/400" class="d-block w-100" alt="Slide 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-content="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-content="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <button id="btnAlerta" class="btn btn-primary btn-lg custom-btn">¡Haz clic aquí!</button>
+        </div>
+
+        <section id="productos" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-striped border">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>001</td><td>Laptop</td><td>$800</td><td>10</td></tr>
+                        <tr><td>002</td><td>Smartphone</td><td>$500</td><td>25</td></tr>
+                        <tr><td>003</td><td>Tablet</td><td>$300</td><td>15</td></tr>
+                        <tr><td>004</td><td>Auriculares</td><td>$150</td><td>8</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contacto" class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Contáctanos</h2>
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label">Nombres</label>
+                                <input type="text" id="nombre" class="form-control" required>
+                                <div class="invalid-feedback">Ingrese sus nombres.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Correo Electrónico</label>
+                                <input type="email" id="email" class="form-control" required>
+                                <div class="invalid-feedback">Ingrese su correo electronico.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensaje</label>
+                                <textarea id="mensaje" class="form-control" rows="3" required></textarea>
+                                <div class="invalid-feedback">Envianos un mensaje o petición.</div>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2026 Desarrollado con Bootstrap</p>
+        <div>
+            <a href="#" class="text-white mx-2">Facebook</a>
+            <a href="#" class="text-white mx-2">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
