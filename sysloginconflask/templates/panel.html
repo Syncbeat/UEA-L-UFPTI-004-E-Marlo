@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control</title>
+</head>
+<body>
+    <h2>¡Bienvenido al Panel del Sistema, {{ nombre }}!</h2>
+    <p>Has iniciado sesión correctamente. Esta es una ruta protegida.</p>
+
+    <h3>Módulos del Sistema:</h3>
+    <ul>
+        <li>Gestión de productos (Pendiente)</li>
+        <li>Gestión de clientes (Pendiente)</li>
+        <li>Gestión de reservas (Pendiente)</li>
+    </ul>
+
+    <br>
+    <a href="{{ url_for('logout') }}">
+        <button>Cerrar Sesión</button>
+    </a>
+</body>
+</html>
